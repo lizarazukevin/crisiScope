@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CrisiScope</title>
+  <link rel="icon" href="imgs/radar_w.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="reset-websview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+  <!--Header Container-->
+  <div class="header-container">
+    <div class="header-title">
+      <h1 style="margin-left: 5px;">CrisiScope</h1>
+      <img id="header-icon" src="imgs/radar_w.png">
+    </div>
+
+    <!--Navigation Bar-->
+    <div class="nav-container">
+      <div class="nav-item"><a href="#home">Home</a></div>
+      <div class="nav-item"><a href="#about">About</a></div>
+      <div class="nav-item"><a href="#videos">Videos</a></div>
+      <div class="nav-item"><a href="#resources">Resources</a></div>
+      <div class="nav-item"><a href="mailto:lizarazukevin@vt.edu">Contact Us</a></div>
+      <div class="nav-item" id="theme-button"><a>Dark Mode</a></div>
+      <div class="nav-item" id="speed-button"><a>Reduce Motion</a></div>
+      <div class="search-bar">
+        <form action="https://www.google.com/search" method="get">
+          <input type="text" placeholder="Search..." name="q">
+          <button type="submit" id="search-butt">
+            <image style="width: 16px" src="imgs/search.png">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Content Container-->
+  <div class="content-container">
+    <section id="home">
+      <div class="home-container">
+        <div class="home-items">
+          <div class="home-item">Natural Disaster</div>
+          <div class="home-item">Alerts,</div>
+          <div class="home-item">Relief,</div>
+          <div class="home-item">and Support</div>
+        </div>
+        <div class="home-items">
+          <i>Live Statistics Every Day</i>
+        </div>
+      </div>
+    </section>
+
+    <!--About Container-->
+    <section id="about">
+      <div class="separator"></div>
+      <div class="section-name">About</div>
+      <div class="separator"></div>
+
+      <div class="about-container">
+        <div class="about-item revealable">
+          <div class="about-par">
+            Being conscious of the world's state from the perspective of natural disaster survivors not only highlights
+            the urgent need for climate action but also fosters empathy and solidarity within society.
+          </div>
+          <img class="image-entry" src="https://www.brookings.edu/wp-content/uploads/2016/06/wildfire001.jpg?w=1500"
+            alt="Fire Storm">
+        </div>
+        <div class="about-item revealable">
+          <img class="image-entry"
+            src="https://cdn.aarp.net/content/dam/aarp/aarp_foundation/our-work/2016/08/1140-foundation-disaster-relief-oklahoma-tornado-cleanup-2013.jpg"
+            alt="Saving Someone">
+          <div class="about-par">
+            By updating the public and facilitating financial support, we can make a tangible impact in assisting
+            survivors on their journey to recovery and in mitigating the devastating effects of future disasters.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Video Container-->
+    <section id="videos">
+      <div class="separator"></div>
+      <div class="section-name">Videos</div>
+      <div class="separator"></div>
+      <div class="videos-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xfZA3vBlQ6o?si=fyH0XBCtBJ_A7A0L"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NAQZvlaNF4s?si=Twk3I5QxUbNLbos-"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Resources Container -->
+    <section id="resources">
+      <div class="separator"></div>
+      <div class="section-name">Resources</div>
+      <div class="separator"></div>
+
+      <div class="resources-container">
+        <div class="resources-item">
+          <a href="https://en.wikipedia.org/wiki/Natural_disaster">Natural Disaster Wiki</a>
+        </div>
+        <div class="resources-item">
+          <a href="https://www.usnews.com/topics/subjects/natural_disasters">Current Event News</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="petition">
+      <br><br><br><br>
+      <div class="separator"></div>
+      <div class="section-name">Petition</div>
+      <div class="separator"></div>
+
+      <p id="counter">🖊️ 0 people have signed this petition and support this cause</p>
+
+      <div class="petition-container revealable">
+        <div class="petition-par">
+          As recent events have demonstrated, the frequency and severity of natural disasters are on the rise, posing a
+          significant threat to our safety, economy, and the long-term health of our planet. We call upon our
+          legislators to strengthen and enact legislation that not only enhances disaster preparedness and response but
+          also prioritizes proactive measures to mitigate the root causes of these disasters. By signing this petition,
+          you join us in urging our leaders to work towards a safer, more resilient, and sustainable future for all.
+        </div>
+
+        <div class="signature-container">
+          <div class="signature" style="width: 200px; text-align: center; font-weight: 20px;">Supporters</div>
+        </div>
+
+      </div>
+
+      <form id=petition-form title="petition-form">
+        <label for="name"><strong>Name:</strong></label>
+        <input id="name" type="text" placeholder="Enter Name Here" required>
+        <label for="hometown"><strong>Hometown:</strong></label>
+        <input id="hometown" type="text" placeholder="Enter Hometown Here" required>
+        <label for="email"><strong>Email:</strong></label>
+        <input id="email" type="text" placeholder="Enter Email Here" required>
+      </form>
+      <div class="submit-button">
+        <input id="sign-now-button" type="submit" value="Sign Now" style="width:100px;">
+      </div>
+    </section>
+
+  </div>
+
+  <!--Modal Container-->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Test Text</p>
+        <button class="nav-item" id="close-modal">Close</button>
+      </div>
+      <img src="imgs/thankk.png">
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Contact Us: <a href="mailto:lizarazukevin@vt.edu">lizarazukevin@vt.edu</a>
+  </div>
+  <script src="index.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

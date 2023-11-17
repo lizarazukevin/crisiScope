@@ -1,0 +1,420 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Body Mods */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(rgba(245, 245, 220, 0.9), rgba(46, 64, 118, 0.9)), url(https://www.worldatlas.com/r/w1200/upload/99/39/ca/shutterstock-218958643.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  background-color: #2e4076;
+  color: lavender;
+  height: 60px;
+}
+
+#header-icon {
+  height: 35px;
+  margin: 4px;
+}
+
+/* Navigation Bar */
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: lightgrey;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: darkgray;
+}
+
+.nav-item:active {
+  background-color: #6e6e6e;
+}
+
+.nav-item:nth-of-type(1) {
+  background-color: #db961f;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  width: 300px;
+  border: 0;
+  outline: none;
+}
+
+#search-butt {
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #db961f;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+/* Content Container */
+.content-container {
+  padding: 150px 10% 5% 10%;
+}
+
+/* Home Content */
+.home-container {
+  background-image: url(https://physicsgurukul.com/wp-content/uploads/2019/07/db1oiuj-3dd55ff6-89be-4d60-830f-494b026904b5.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.home-items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+
+.home-items:nth-of-type(2) {
+  background-color: lavender;
+  color: #2e4076;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.home-item {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: lavender;
+  font-size: 60px;
+  padding: 30px;
+  font-weight: bolder;
+}
+
+/* About Content */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.about-par {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(225, 171, 71, 0.8);
+  color: lavender;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 20px;
+  width: 300px;
+}
+
+/* Videos Container */
+.videos-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+/* Resources Container */
+.resources-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(230, 230, 250, 0.5);
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.resources-item {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.resources-item a:link {
+  color: darkgray;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.resources-item a:visited {
+  color: maroon;
+}
+
+.resources-item a:hover {
+  color: lavender;
+  animation: shake 0.4s ease infinite;
+}
+
+.resources-item a:active {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: darkseagreen;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Videos */
+iframe {
+  margin: 10px;
+}
+
+iframe:hover {
+  box-shadow: 5px 5px lavender;
+}
+
+/* Petition Form */
+.petition-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.petition-par {
+  color: lavender;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #2e4076;
+  margin-top: 50px;
+  padding: 20px;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.signature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signature {
+  color: #2e4076;
+  font-size: 15px;
+  background-color: #87d9b0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#petition-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+  color: lavender;
+}
+
+#counter {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: lavender;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Image Entry */
+.image-entry {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+/* Separators */
+.separator {
+  border-radius: 60px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: lavender;
+  height: 10px;
+  width: 100%;
+}
+
+.section-name {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font: bold;
+  color: lavender;
+  font-size: 40px;
+  margin: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(16, 34, 88, 0.9)), url(https://www.worldatlas.com/r/w1200/upload/99/39/ca/shutterstock-218958643.jpg);
+}
+
+.nav-dark-mode {
+  background-color: #322f2f;
+}
+
+#theme-button {
+  margin-left: auto;
+}
+
+/* Error Mode */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: pink;
+}
+
+/* Animations */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Modal */
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue;
+  /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+  /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#close-modal {}
+
+/* Footer */
+.footer {
+  font-weight: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a8a4a4;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+}
